@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Attribute Tracker</title>
+  </head>
+  <body>
+    <div id="content">
+      <div id="heading">
+        <h1>Oblivion Attribute Tracker</h1>
+
+        <p>
+          Pick the three attributes you would like to work on for your current
+          level. Then update them each time a skill towards that attribute is
+          leveled!
+        </p>
+      </div>
+      <div id="attributes">
+        <div class="attribute">
+          <label for="atr1">Attribute 1:</label>
+          <select name="atr1" id="atr1">
+            <option value="">--Select attribute--</option>
+            <option value="Strength">Strength</option>
+            <option value="Intelligence">Intelligence</option>
+            <option value="Willpower">Willpower</option>
+            <option value="Agility">Agility</option>
+            <option value="Speed">Speed</option>
+            <option value="Endurance">Endurance</option>
+            <option value="Personality">Personality</option>
+          </select>
+          <div class="counter">
+            <button class="subtract" data-target="atr1-counter">-</button>
+            <p id="atr1-counter" class="count-display">0</p>
+            <button class="add" data-target="atr1-counter">+</button>
+          </div>
+        </div>
+        <div class="attribute">
+          <label for="atr2" id="atr2">Attribute 2:</label>
+          <select name="atr2">
+            <option value="">--Select attribute--</option>
+            <option value="Strength">Strength</option>
+            <option value="Intelligence">Intelligence</option>
+            <option value="Willpower">Willpower</option>
+            <option value="Agility">Agility</option>
+            <option value="Speed">Speed</option>
+            <option value="Endurance">Endurance</option>
+            <option value="Personality">Personality</option>
+          </select>
+          <div class="counter">
+            <button class="subtract" data-target="atr2-counter">-</button>
+            <p id="atr2-counter" class="count-display">0</p>
+            <button class="add" data-target="atr2-counter">+</button>
+          </div>
+        </div>
+        <div class="attribute">
+          <label for="atr3">Attribute 3:</label>
+          <select name="atr3" id="atr3">
+            <option value="">--Select attribute--</option>
+            <option value="Strength">Strength</option>
+            <option value="Intelligence">Intelligence</option>
+            <option value="Willpower">Willpower</option>
+            <option value="Agility">Agility</option>
+            <option value="Speed">Speed</option>
+            <option value="Endurance">Endurance</option>
+            <option value="Personality">Personality</option>
+          </select>
+          <div class="counter">
+            <button class="subtract" data-target="atr3-counter">-</button>
+            <p id="atr3-counter" class="count-display">0</p>
+            <button class="add" data-target="atr3-counter">+</button>
+          </div>
+        </div>
+      </div>
+      <div id="state">
+        <div class="state-btn-container">
+          <label for="save" id="save-lbl">Create save point</label>
+          <button class="state-btn" name="save" id="save-btn">Save</button>
+        </div>
+        <div class="state-btn-container">
+          <label for="load" id="load-lbl">Load last save point</label>
+          <button class="state-btn" name="load" id="load-btn">Load</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
