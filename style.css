@@ -10,6 +10,7 @@ label {
 .state-btn-container {
   display: flex;
   flex-direction: column;
+  font-size: 14px;
 }
 
 .state-btn {

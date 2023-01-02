@@ -22,9 +22,6 @@ const subtract = (event) => {
   }
 };
 
-// save function
-const save = () => {};
-
 // assign add function to add buttons
 for (let i = 0; i < addButtons.length; i++) {
   addButtons[i].addEventListener("click", add);
