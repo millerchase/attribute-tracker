@@ -7,8 +7,8 @@ const add = (event) => {
   const counter = document.getElementById(
     event.target.getAttribute("data-target")
   );
-  counter.innerText = parseInt(counter.innerText) + 1;
-  console.log(counter);
+  counter.innerText =
+    parseInt(counter.innerText) + 1 < 10 ? parseInt(counter.innerText) + 1 : 10;
 };
 
 // subtraction function for subtraction buttons

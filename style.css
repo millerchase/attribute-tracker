@@ -2,6 +2,23 @@ label {
   margin-right: 0.4em;
 }
 
+#atr-breakdown-lst {
+  border: 1px solid black;
+  padding-left: 0.25em;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  visibility: hidden;
+}
+
+.atr-breakdown p,
+h4 {
+  margin-bottom: 0.25em;
+}
+
+.atr-breakdown {
+  margin-bottom: 1em;
+}
+
 #state {
   display: flex;
   justify-content: space-evenly;
