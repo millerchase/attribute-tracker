@@ -71,7 +71,10 @@ const breakdown = () => {
   }
 };
 
+// execute breakdown on startup
 breakdown();
+
+// execute breakdown when changes are made to attribute list
 document.getElementById("attributes").addEventListener("change", breakdown);
 
 // assign breakdown function to addition and subtraction buttons
@@ -81,6 +84,10 @@ for (let i = 0; i < addButtons.length; i++) {
 for (let i = 0; i < subtractButtons.length; i++) {
   subtractButtons[i].addEventListener("click", breakdown);
 }
+
+// execute breakdown when reset and load btn are pressed
+document.getElementById("reset-btn").addEventListener("click", breakdown);
+document.getElementById("load-btn").addEventListener("click", breakdown);
 
 {
   /* <p>
