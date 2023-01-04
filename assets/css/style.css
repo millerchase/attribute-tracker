@@ -3,6 +3,12 @@
   --white: rgb(222, 220, 220);
 }
 
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   background-image: url(../images/Oblivion.jpg);
   background-position: center top;
