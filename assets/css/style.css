@@ -1,0 +1,98 @@
+:root {
+  --red: rgb(170, 0, 0);
+}
+
+body {
+  background-image: url(../images/Oblivion.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 95vh;
+  background-color: black;
+}
+
+h1 {
+  text-align: center;
+  background: -webkit-linear-gradient(
+    var(--red),
+    white,
+    black,
+    white,
+    var(--red)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+u {
+  text-decoration: underline var(--red);
+}
+
+.state-btn:hover {
+  background-color: var(--red);
+  color: white;
+  transform: scaleY(2px);
+}
+
+#content {
+  color: white;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+}
+
+label {
+  margin-right: 0.4em;
+}
+
+#atr-breakdown-lst {
+  border: 1px solid var(--red);
+  padding-left: 0.25em;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  visibility: hidden;
+}
+
+.atr-breakdown p,
+h4 {
+  margin-bottom: 0.25em;
+}
+
+.atr-breakdown {
+  margin-bottom: 1em;
+}
+
+#state {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.state-btn-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.state-btn {
+  padding: 0.25rem 0;
+  margin-top: 0.2rem;
+}
+
+.attribute {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid var(--red);
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5em;
+}
+
+.count-display {
+  margin: 0 0.25em;
+}
