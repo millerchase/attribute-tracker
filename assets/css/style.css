@@ -47,7 +47,11 @@ u {
   text-decoration: underline var(--red);
 }
 
-.state-btn:active {
+.btn {
+  background-color: var(--white);
+}
+
+.btn:active {
   background-color: var(--red);
   color: var(--white);
   transform: scaleY(3px);
@@ -90,7 +94,6 @@ h4 {
 .state-btn {
   padding: 0.25rem 0;
   margin-top: 0.2rem;
-  background-color: var(--white);
 }
 
 .attribute {
