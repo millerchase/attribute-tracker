@@ -29,6 +29,7 @@ const breakdown = () => {
         : 0;
     document.getElementById("plural1").innerText =
       10 - parseInt(atr1Counter.innerText) != 1 ? "s" : "";
+    document.getElementById("atr1-b-desc").innerText = displayDesc(atr1.value);
 
     // breakdown second attribute
     document.getElementById("atr2-b").innerText = atr2.value;
@@ -39,6 +40,8 @@ const breakdown = () => {
     document.getElementById("plural2").innerText =
       10 - parseInt(atr2Counter.innerText) != 1 ? "s" : "";
 
+    document.getElementById("atr2-b-desc").innerText = displayDesc(atr2.value);
+
     // breakdown third attribute
     document.getElementById("atr3-b").innerText = atr3.value;
     atr3BCount.innerText =
@@ -47,6 +50,8 @@ const breakdown = () => {
         : 0;
     document.getElementById("plural3").innerText =
       10 - parseInt(atr3Counter.innerText) != 1 ? "s" : "";
+
+    document.getElementById("atr3-b-desc").innerText = displayDesc(atr3.value);
 
     // "to level up" countdown
     const pointsLeft =
@@ -71,6 +76,34 @@ const breakdown = () => {
   }
 };
 
+const displayDesc = (attribute) => {
+  switch (true) {
+    case attribute === "Strength":
+      return "(Blunt, Blade, Hand-to-Hand)";
+
+    case attribute === "Intelligence":
+      return "(Conjuration, Mysticicsm, Alchemy)";
+
+    case attribute === "Willpower":
+      return "(Alteration, Destruction, Restoration)";
+
+    case attribute === "Agility":
+      return "(Marksman, Security, Sneak)";
+
+    case attribute === "Speed":
+      return "(Acrobatics, Athletics, Light Armor)";
+
+    case attribute === "Endurance":
+      return "(Block, Armorer, Heavy Armor)";
+
+    case attribute === "Personality":
+      return "(Mercantile, Speechcraft, Illusion)";
+
+    default:
+      return "Uh-Oh Spaghettios";
+  }
+};
+
 // execute breakdown on startup
 breakdown();
 
@@ -88,11 +121,3 @@ for (let i = 0; i < subtractButtons.length; i++) {
 // execute breakdown when reset and load btn are pressed
 document.getElementById("reset-btn").addEventListener("click", breakdown);
 document.getElementById("load-btn").addEventListener("click", breakdown);
-
-{
-  /* <p>
-        <b id="atr1-b"></b> - still requires
-        <b><u id="atr1-b-count"></u></b> points
-    </p>
-    <em id="atr1-b-desc"></em> */
-}
