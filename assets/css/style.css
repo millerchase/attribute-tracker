@@ -1,5 +1,6 @@
 :root {
   --red: rgb(170, 0, 0);
+  --white: rgb(222, 220, 220);
 }
 
 body {
@@ -7,7 +8,7 @@ body {
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 95vh;
+  height: 100%;
   background-color: black;
 }
 
@@ -15,9 +16,9 @@ h1 {
   text-align: center;
   background: -webkit-linear-gradient(
     var(--red),
-    white,
+    var(--white),
     black,
-    white,
+    var(--white),
     var(--red)
   );
   background-clip: text;
@@ -31,12 +32,12 @@ u {
 
 .state-btn:hover {
   background-color: var(--red);
-  color: white;
+  color: var(--white);
   transform: scaleY(2px);
 }
 
 #content {
-  color: white;
+  color: var(--white);
   background: rgba(0, 0, 0, 0.8);
   padding: 1rem;
 }
