@@ -35,6 +35,14 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
+h4 {
+  text-align: left;
+  background: -webkit-linear-gradient(var(--red), var(--white), var(--red));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 u {
   text-decoration: underline var(--red);
 }
